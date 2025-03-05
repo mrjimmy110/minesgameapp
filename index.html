@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mines Game</title>
+    <title>Mines Game Mini App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>GAMBLING DREAM MINES</h1>
-        <p>@GamblingDreamBot</p>
 
-        <div id="loading" class="loading">
-            <img src="hourglass.gif" alt="Loading">
+    <div class="game-container">
+        <img src="assets/images/background.png" class="background">
+        <div class="game-content">
+            <img src="assets/images/mines-logo.png" class="logo">
+            <img src="assets/images/game-board.png" class="game-board">
+            <img src="assets/images/loading-box.png" class="loading-box">
+            <img src="assets/images/safe-box.png" class="safe-box">
+            <button class="get-signal-btn">
+                <img src="assets/images/get-signal-btn.png">
+            </button>
+            <button class="back-btn">
+                <img src="assets/images/back-btn.png">
+            </button>
         </div>
-
-        <div id="gameGrid" class="grid hidden"></div>
-
-        <button id="getSignal">Get Signal</button>
-        <button id="back">Back</button>
     </div>
 
-    <script src="telegram.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
